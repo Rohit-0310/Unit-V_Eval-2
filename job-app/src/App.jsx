@@ -5,6 +5,7 @@ import { Home } from './Pages/Home'
 import { Login } from './Pages/Login'
 import { JobPage } from './Pages/JobPage';
 import { Admin } from './Pages/Admin';
+import { PrivetRoute } from './AuthContext/PrivetRoute';
 
 function App() {
     return (
@@ -13,8 +14,21 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path="/Jobpage" element={<JobPage />}></Route>
-                <Route path="/admin" element={<Admin />}></Route>
+                <Route 
+                    path="/Jobpage" 
+                    element={
+                        <PrivetRoute>
+                            <JobPage />
+                        </PrivetRoute>
+                    }></Route>
+                    
+                <Route 
+                    path="/admin" 
+                    element={
+                    <PrivetRoute>
+                        <Admin />
+                    </PrivetRoute>
+                }></Route>
                 <Route path="/login" element={<Login />}></Route>
             </Routes>
 

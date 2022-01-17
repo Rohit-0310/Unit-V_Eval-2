@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { H1 } from "../Style/h1";
+import { H1 } from "../Style/h";
 
 export const Navbar = () => {
     return (

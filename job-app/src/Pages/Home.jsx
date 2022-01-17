@@ -1,11 +1,10 @@
-import { useContext } from "react";
-import { Navigate } from "react-router-dom";
-import { AuthContext } from "../AuthContext/AuthContext";
+import { H2 } from "../Style/h";
 
 export const Home = () => {
-  const { token } = useContext(AuthContext);
-  if (!token) {
-    return <Navigate to={"/login"} />;
-  }
+  return (
+    <div>
+      <H2>Welcome To Home Page</H2>
+    </div>
+  )
  
 };

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import {useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext/AuthContext";
-
+import { Input } from "../Style/Input";
 export const Login = () => {
     const [form, setFrom] = useState({});
     const handleChange = ({ target: { name, value } }) => {
@@ -17,13 +17,13 @@ export const Login = () => {
     return (
       <div>
         <h1>Login</h1>
-        <input
+        <Input
             onChange={handleChange}
             name="email"
             type="text"
             placeholder="Enter Email"
         />
-        <input
+        <Input
             onChange={handleChange}
             name="password"
             type="text"
