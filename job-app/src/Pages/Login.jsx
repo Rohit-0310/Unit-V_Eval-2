@@ -3,13 +3,15 @@ import {useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext/AuthContext";
 import { Buttton } from "../Style/Button";
 import { Input } from "../Style/Input";
+import { H2 } from "../Style/h";
+
 export const Login = () => {
     const [form, setFrom] = useState({});
-    const handleChange = ({ target: { name, value } }) => {
+    const handleChangeLogin = ({ target: { name, value } }) => {
         setFrom({ ...form, [name]: value });
     };
     const { handleToken } = useContext(AuthContext);
-    const handleSubmit = () => {
+    const handleSubmitLogin = () => {
         handleToken(12345678);
         navigate(-1);
     };
@@ -17,20 +19,22 @@ export const Login = () => {
     const navigate = useNavigate();
     return (
       <div>
-        <h1>Login</h1>
+        <H2>Login Page</H2>
         <Input
-            onChange={handleChange}
+            onChange={handleChangeLogin}
             name="email"
-            type="text"
-            placeholder="Enter Email"
+            type="email"
+            required="true"
+            placeholder="Enter Your Email"
         />
         <Input
-            onChange={handleChange}
+            onChange={handleChangeLogin}
             name="password"
             type="text"
-            placeholder="Enter Password"
+            required="true"
+            placeholder="Enter Your Password"
         />
-        <Buttton onClick={handleSubmit}>Submit</Buttton>
+        <Buttton onClick={handleSubmitLogin}>Submit</Buttton>
       </div>
     );
 };
