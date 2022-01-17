@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import {useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext/AuthContext";
+import { Buttton } from "../Style/Button";
 import { Input } from "../Style/Input";
 export const Login = () => {
     const [form, setFrom] = useState({});
@@ -29,7 +30,7 @@ export const Login = () => {
             type="text"
             placeholder="Enter Password"
         />
-        <button onClick={handleSubmit}>Submit</button>
+        <Buttton onClick={handleSubmit}>Submit</Buttton>
       </div>
     );
 };
