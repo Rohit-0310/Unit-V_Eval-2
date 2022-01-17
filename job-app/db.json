@@ -1,5 +1,36 @@
 {
     "jobs":[
-        
+        {
+            "status": false,
+            "Company name": "Masai School",
+            "Job Title": "IA",
+            "Job Discription": "Instructional Associate",
+            "Jov Location":"Bengaluru, Karnataka",
+            "Job Type":"Work From Home"
+        },
+        {
+            "status": false,
+            "Company name": "TCS",
+            "Job Title": "software engineer",
+            "Job Discription": "Software engineers",
+            "Jov Location":"Bengaluru, Karnataka",
+            "Job Type":"Work From Home"
+        },
+        {
+            "status": false,
+            "Company name": "Masai School",
+            "Job Title": "IA",
+            "Job Discription": "Instructional Associate",
+            "Jov Location":"Patna, Bihar",
+            "Job Type":"Work From Home"
+        },
+        {
+            "status": false,
+            "Company name": "TCS",
+            "Job Title": "Computer Engineer",
+            "Job Discription": "Computer Engineers",
+            "Jov Location":"Delhi, India",
+            "Job Type":"Work From Office"
+        }
     ]
 }
