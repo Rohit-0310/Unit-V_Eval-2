@@ -31,3 +31,16 @@ export const H3 = styled.h2`
     color: #a50000;
     /* background-color: #0f9662; */
 `
+
+
+export const H4 = styled.h4`
+    /* width: 300px; */
+    text-align: center;
+    /* margin:1%; */
+    /* border: 2px solid black; */
+    font-family: "JetBrains Mono",monospace;
+    font-size:16px;
+    border: 2px solid #1d0e35;
+    color: #a50000;
+    /* background-color: #0f9662; */
+`

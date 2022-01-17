@@ -14,7 +14,7 @@ export const Admin = () =>{
             placeholder="Enter Company Name"
         />
         <Input
-            name="job title"
+            name="Job title"
             type="text"
             placeholder="Enter Job Title"
         />
