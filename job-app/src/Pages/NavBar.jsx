@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { H1 } from "../Style/h1";
 
 export const Navbar = () => {
     return (
-        <div>
-            <Link to={"/"}><h1>Home Page</h1></Link>
-            <Link to={"/login"}><h1>LogIn</h1></Link>
-            <Link to={"/Jobpage"}><h1>Job Page</h1></Link>
+        <div style={{ display: 'flex', marginLeft:"10%", width: '100%'}}>
+            <Link to={"/"}><H1>Home Page</H1></Link>
+            <Link to={"/Jobpage"}><H1>Job Page</H1></Link>
+            <Link to={"/admin"}><H1>Admin</H1></Link>
+            <Link to={"/login"}><H1>LogIn</H1></Link>
         </div>
     )
 }

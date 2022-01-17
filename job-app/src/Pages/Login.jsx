@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import {useNavigate } from "react-router-dom";
-import { AuthContext } from "../Authcontex/AuthContext";
+import { AuthContext } from "../AuthContext/AuthContext";
 
 export const Login = () => {
     const [form, setFrom] = useState({});
