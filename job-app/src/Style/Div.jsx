@@ -7,4 +7,13 @@ export const Div = styled.div`
 
 `
 
+export const AdminDiv = styled.div`
+   display: grid;
+   align-items:center;
+   width: 500px;
+   text-align: center;
+   margin-left:30%;
+
+`
+
 // style={{ display: 'flex', marginLeft:"10%", width: '100%'}}
